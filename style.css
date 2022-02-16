@@ -38,6 +38,11 @@ main {
   transform: translate(-50%, -50%);
   color: white;
   background-color: rgba(235, 147, 47, 0.568);
+  width: 400px;
+  height: 200px;
+}
+.hero-text p {
+  font-size: 30px;
 }
 .hero-text h1 {
   font-size: 50px;
@@ -70,6 +75,7 @@ main {
 #portfolio {
   font-size: 1rem;
   font-weight: bold;
+  color: darkslategray;
 }
 .containerMobile {
   background-color: rgba(235, 147, 47, 0.568);
@@ -98,15 +104,27 @@ main {
 }
 
 /*divs*/
+.div1:hover,
+.div2:hover,
+.div3:hover,
+.textbox:hover {
+  /*this is the div boxes*/
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  border: 1px white solid;
+}
 .div1,
 .div2,
 .div3,
 .textbox {
-  /*this is the div boxes*/
   height: 220px;
   width: 200px;
   border-radius: 10px;
 }
+
 header p {
   /*this is the paragraph of the container*/
 
@@ -161,6 +179,10 @@ p {
 form {
   font-display: none;
 }
+form p,
+label {
+  color: darkslategrey;
+}
 .formcontainer {
   display: flex;
   flex-direction: column;
@@ -202,6 +224,9 @@ form {
 /*end of formcontainer*/
 
 /*footer*/
+footerRight p {
+  color: darkslategrey;
+}
 #footerLeft {
   display: flex;
   flex: 50%;
@@ -246,6 +271,7 @@ form {
   h2 {
     font-size: 1rem;
     font-weight: bold;
+    color: darkslategray;
   }
   .wholecontainer {
     display: flex;
@@ -309,21 +335,5 @@ form {
   }
 }
 /*responsive for desktop*/
-@media only screen and(min-width: 768px) and (max-width: 1200px) {
-  .wholecontainer {
-    height: 10vh;
-  }
-  .containerDesktop {
-    display: flex;
-    align-items: flex-start;
-  }
-  .div1,
-  .div2,
-  .div3,
-  .textbox {
-    /*this is the div boxes*/
-    width: 100px;
-    height: 100px;
-  }
-}
+
 /*Building a Desktop view*/
