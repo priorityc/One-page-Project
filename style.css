@@ -5,12 +5,13 @@
 }
 
 body {
+  background-color: rgba(252, 249, 245, 0.959);
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
 }
 body,
 html {
-  height: 100%;
+  height: 90%;
 }
 
 main {
@@ -20,10 +21,15 @@ main {
   min-height: 100vh;
   margin-bottom: -75px;
 }
+
+a:hover {
+  transform: scale(1.1); /*get rid of buled points*/
+}
+
 /*HERO IMG DIV*/
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  height: 50%;
+  background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/ url("https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+  height: 80%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,6 +46,7 @@ main {
   background-color: rgba(235, 147, 47, 0.568);
   width: 400px;
   height: 200px;
+  border-radius: 5px;
 }
 .hero-text p {
   font-size: 30px;
@@ -73,12 +80,12 @@ main {
 }
 /*The mobile flex container*/
 #portfolio {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: darkslategray;
 }
 .containerMobile {
-  background-color: rgba(235, 147, 47, 0.568);
+  background-color: rgba(235, 147, 47, 0.329);
   width: 600px;
   height: auto;
   display: flex;
@@ -88,10 +95,14 @@ main {
   margin: 10px;
 }
 #wholecontainer {
+  border-radius: 5px;
   display: flex;
   flex-direction: row;
-  background-color: rgba(235, 147, 47, 0.568);
-  height: 200vh;
+  background-color: rgba(136, 77, 10, 0.438);
+  height: 170vh;
+  box-shadow: rgba(180, 166, 166, 0.25) 0px 54px 55px,
+    rgba(228, 217, 217, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .containerDesktop {
   display: none;
@@ -100,6 +111,9 @@ main {
   display: none;
 }
 #Desktopfooter {
+  display: none;
+}
+#Ipad {
   display: none;
 }
 
@@ -120,17 +134,17 @@ main {
 .div2,
 .div3,
 .textbox {
-  height: 220px;
-  width: 200px;
+  height: 230px;
+  width: 270px;
   border-radius: 10px;
 }
 
 header p {
   /*this is the paragraph of the container*/
-
+  text-align: justify;
   font-size: 15px;
-  margin-left: 30px;
-  padding: 5px;
+  margin-left: 80px;
+  padding-right: auto;
 }
 
 .div1 {
@@ -147,6 +161,7 @@ header p {
 
 .textbox {
   /*pargraph div*/
+  font-size: 20px;
   background-color: rgba(105, 76, 21, 0.719);
   color: white;
   padding: 20px;
@@ -162,10 +177,10 @@ header {
   padding: 30px 10px;
 }
 h2 {
-  font-size: 15px;
+  color: darkslategrey;
+  font-size: 25px;
   margin-bottom: 10px;
-  display: flex;
-  align-items: center;
+  margin-left: 80px;
 }
 p {
   font-size: 10px;
@@ -177,21 +192,33 @@ p {
 
 /*form container*/
 form {
+  height: 500px;
+  padding-left: 20px;
+  margin-left: 10px;
   font-display: none;
+  padding-top: 20px;
+  background-color: rgba(107, 106, 31, 0.582);
+
+  box-shadow: rgb(136, 131, 131) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 form p,
 label {
-  color: darkslategrey;
+  color: white;
+  font-size: 20px;
 }
 .formcontainer {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 #input1,
 #input2,
 #textarea {
   padding: 5px;
   margin-right: 40px;
+  width: 300px;
 }
 #textarea {
   height: 120px;
@@ -213,6 +240,9 @@ label {
   display: inline-block;
   padding: 10px 25px;
 }
+#formbutton {
+  margin-top: 20px;
+}
 
 #formbutton:hover {
   background-color: #555;
@@ -222,7 +252,12 @@ label {
   font-size: 20px;
 }
 /*end of formcontainer*/
-
+i {
+  color: brown;
+  width: 100px;
+  height: 50px;
+  font-size: 40px;
+}
 /*footer*/
 footerRight p {
   color: darkslategrey;
@@ -231,9 +266,10 @@ footerRight p {
   display: flex;
   flex: 50%;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   height: 55px;
   width: 100vw;
+  margin-top: 20px;
 }
 
 #footerLeft i {
@@ -247,26 +283,51 @@ footerRight p {
   transition: ease-in-out;
 }
 #footerRight {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 50%;
-  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  bottom: 20%;
+  left: 30%;
+  margin-bottom: 40px;
 }
 
-#footerRight p {
+#footerRight p,
+a {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  font-size: 15px;
+  color: green;
 }
 .footercontainer {
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+/*Second img*/
+img {
+  width: 350px;
+  height: 500px;
+  /*border: 1px solid green;  Gray border */
+  border-radius: 10px; /* Rounded border */
+  /* Some padding */
+  margin: 10px;
+}
+
+/* Add a hover effect (grey shadow */
+img:hover {
+  box-shadow: white 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 /*responsive for Ipad*/
 @media screen and (min-width: 768px) {
   .Mobileview {
     display: none;
+  }
+  .hero-image {
+    height: 40%;
   }
   h2 {
     font-size: 1rem;
@@ -302,6 +363,7 @@ footerRight p {
   }
   form {
     width: 200px;
+    margin-right: 20px;
   }
   form p {
     font-size: 20px;
