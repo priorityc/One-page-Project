@@ -75,14 +75,14 @@ a:hover {
   font-size: 20px;
 }
 /*nav bar Mobile*/
-main .mobileView ul li {
+ul li {
   background-color: rgba(235, 147, 47, 0.329);
   text-align: center;
   padding: 7px 0px;
   margin: 5px 0px;
 }
 
-main .mobileView ul li a {
+ul li a {
   color: white;
   text-decoration: none;
   font-size: large;
@@ -123,10 +123,10 @@ main .mobileView ul li a {
 .div2,
 .div3,
 .textbox {
-  height: 80px;
-  width: 700px;
+  height: 100px;
+  width: 300px;
   border-radius: 5px;
-  margin: 10px 50px;
+  margin-left: 40px;
 }
 .div1 {
   background-color: coral;
@@ -148,21 +148,23 @@ main .mobileView ul li a {
   padding: 10px;
 }
 img {
-  width: 250px;
+  width: 200px;
   height: 300px;
-  margin: 20px;
+  margin: 10px;
+  margin-right: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .formcontainer {
   height: fit-content;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
-  margin: 10px 50px;
+  margin: 10px 40px;
 }
 
 form {
-  width: 200px;
+  width: 300px;
+  height: fit-content;
   padding: 10px;
 }
 form :hover {
@@ -200,45 +202,85 @@ label {
 footer {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  height: 50px;
-  width: 300px;
+  align-items: flex-start;
+  height: 30px;
+
   margin-left: 30px;
+  margin-top: 150px;
+  height: 30px;
 }
 #footerLeft {
   color: white;
   font-size: 30px;
-  width: 400px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 #footerRight {
-  width: 400px;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
-.Techflex-container {
+.containerMobile {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-
-  font-size: 15px;
-  color: darkslategray;
-  padding: 5px;
-  margin-left: auto;
+  height: fit-content;
+  flex-grow: 1;
+  flex-shrink: 2;
 }
-
-.Techskills {
-  height: 50px;
-  width: 100px;
-  font-size: 20px;
-  font-weight: bold;
-  padding-left: 5px;
-
-  background-color: rgba(170, 87, 39, 0.637);
-  color: white;
+.Whole-box {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: fit-content;
+}
+.Desktop-Aboutme {
+  display: none;
+}
+.Desktop-nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .Desktop-nav ul {
+    display: ;
+  }
+  .Mobile-Aboutme {
+    display: none;
+  }
+  .hero-image {
+    height: 40%;
+  }
+  .wholecontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .formcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .containerMobile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+  .Whole-box {
+    flex-direction: column;
+    display: flex;
+  }
+  .div1,
+  .div2,
+  .div3,
+  .textbox {
+    flex-grow: 1;
+  }
 }
