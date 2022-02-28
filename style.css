@@ -16,7 +16,7 @@ html {
 
 main {
   min-height: 100vh;
-  margin-bottom: -50px;
+  margin-bottom: -40px;
 }
 
 a:hover {
@@ -75,14 +75,14 @@ a:hover {
   font-size: 20px;
 }
 /*nav bar Mobile*/
-ul li {
-  background-color: rgba(235, 147, 47, 0.329);
+.mobile-nav li {
+  background-color: rgba(138, 103, 39, 0.719);
   text-align: center;
   padding: 7px 0px;
   margin: 5px 0px;
 }
 
-ul li a {
+.mobile-nav li a {
   color: white;
   text-decoration: none;
   font-size: large;
@@ -123,10 +123,10 @@ ul li a {
 .div2,
 .div3,
 .textbox {
-  height: 100px;
-  width: 300px;
+  height: 150px;
+  width: 200px;
   border-radius: 5px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 .div1 {
   background-color: coral;
@@ -203,10 +203,9 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  height: 30px;
+  height: fit-content;
 
   margin-left: 30px;
-  margin-top: 150px;
   height: 30px;
 }
 #footerLeft {
@@ -225,11 +224,14 @@ footer {
 }
 
 .containerMobile {
+  background-color: rgba(202, 173, 108, 0.76);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: fit-content;
   flex-grow: 1;
-  flex-shrink: 2;
+  flex-shrink: 1;
 }
 .Whole-box {
   display: flex;
@@ -247,12 +249,51 @@ footer {
   .mobile-nav {
     display: none;
   }
-  .Desktop-nav ul {
-    display: ;
+  .Desktop-nav {
+    display: contents;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(105, 76, 21, 0.719);
+  }
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
   }
   .Mobile-Aboutme {
     display: none;
   }
+  .Desktop-Aboutme {
+    display: contents;
+  }
+  .m-img {
+    display: none;
+  }
+
+  .Desktop-Aboutme header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+  }
+
   .hero-image {
     height: 40%;
   }
@@ -263,24 +304,40 @@ footer {
   }
   .formcontainer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
   }
   .containerMobile {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    margin-right: 20px;
+    width: 100px;
   }
   .Whole-box {
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
+    height: 400px;
+    width: 700px;
   }
   .div1,
   .div2,
   .div3,
   .textbox {
-    flex-grow: 1;
+    flex-basis: 200px;
+  }
+  img {
+    height: 180px;
+    width: 150px;
+    float: left;
+  }
+  form {
+    height: 50px;
+    width: 50px;
+  }
+  footer {
+    margin-bottom: 200px;
   }
 }
