@@ -75,18 +75,31 @@ a:hover {
   font-size: 20px;
 }
 /*nav bar Mobile*/
-.mobile-nav li {
-  background-color: rgba(138, 103, 39, 0.719);
-  text-align: center;
-  padding: 7px 0px;
-  margin: 5px 0px;
-}
-
-.mobile-nav li a {
+ul li a {
   color: white;
   text-decoration: none;
   font-size: large;
   font-weight: bold;
+}
+ul li a {
+  background-color: rgba(177, 144, 113, 0.651);
+  margin: 3px;
+  height: 40px;
+}
+
+.fa-solid.fa-bars {
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+#hamburger {
+  color: white;
+  font-size: 80px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .Aboutme {
@@ -245,10 +258,16 @@ footer {
 .Desktop-nav {
   display: none;
 }
+@media screen and (max-width: 400px) {
+  .fa-solid fa-bars {
+    display: contents;
+  }
+}
 @media screen and (min-width: 768px) {
-  .mobile-nav {
+  #hamburger {
     display: none;
   }
+
   .Desktop-nav {
     display: contents;
   }
@@ -295,7 +314,7 @@ footer {
   }
 
   .hero-image {
-    height: 40%;
+    height: 35%;
   }
   .wholecontainer {
     display: flex;
@@ -339,5 +358,10 @@ footer {
   }
   footer {
     margin-bottom: 200px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .hero-image {
+    height: 60%;
   }
 }
