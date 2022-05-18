@@ -1,10 +1,30 @@
-Newmenu = (e)=> {
-  document.querySelector('i').innerHTML=`<ul>
-  <li><a href="#" class="navlinks">Deals</a></li>
-  <li><a href="#" class="navlinks">Locations</a></li>
-  <li><a href="#" class="navlinks">Help</a></li>
-  <li><a href="#" class="navlinks">Contact</a></li>
-</ul>`
+function myFunction() {
+  let x = document.querySelector(".myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
-document.addEventListener('click', Newmenu);
 
+
+
+
+//function toggle () {
+  
+
+  //toggle
+  //function MobileMenu () 
+
+
+ /*if  {
+  
+}else {element.style.display="none"}
+}
+ 
+
+
+validate =(e)=> {
+  element.querySelector('#hide').style.display='none';
+
+*/
