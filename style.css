@@ -5,13 +5,14 @@
 }
 
 body {
-  background-color: rgba(218, 199, 174, 0.959);
+ 
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
 }
 body,
 html {
   height: 90%;
+  background-color: antiquewhite;
 }
 
 main {
@@ -26,7 +27,7 @@ a:hover {
 /*HERO IMG DIV*/
 .hero-image {
   background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/ url("https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
-  height: 70%;
+  height: 60%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,15 +41,17 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  width: 400px;
+  width: 200px;
   height: 100px;
   border-radius: 5px;
+  padding: 7px;
 }
 .hero-text p {
-  font-size: 2rem;
+  font-size: 20;
 }
 .hero-text h1 {
-  font-size: 3em;
+  font-size: 2em;
+  margin-bottom: 15px;
 }
 
 .hero-text button {
@@ -97,7 +100,7 @@ ul li a {
 #hamburger {
   color: white;
   font-size: 80px;
-  width: 100%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -107,7 +110,10 @@ ul li a {
   display: none;
 }
 .myLinks {
-  background-color: #555;
+  background-color: rgba(220, 175, 63, 0.441);
+  display: flex;
+  flex-direction: column;
+  width: 70px;
 }
 .myLinks a {
   float: left;
@@ -118,17 +124,20 @@ ul li a {
   list-style-type: none;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 20px
 }
 .Aboutme {
   color: darkslategrey;
+  
   font-size: 17px;
   display: flex;
   flex-direction: column;
-  margin: 18px 40px;
-  padding: 19px;
+
+  padding: 5px;
   text-align: justify;
+  width: 100%;
+  height: 100%;
 }
 #portfolio {
   margin-left: 50px;
@@ -156,8 +165,8 @@ h2 {
 .div3,
 .textbox {
  flex-grow: 1;
-  width: 380px;
-  height: 300px;
+  width: 800px;
+  height: 600px;
   border-radius: 5px;
   margin-left: 20px;
 }
@@ -176,6 +185,10 @@ h2 {
   padding: 23px 30px;
   background-color: rgba(247, 237, 237, 0.555);
   text-shadow:  2px 2px black;
+  
+}
+.div1,.div2,.div3,.textbox,a {
+  text-decoration: none;
 }
 
 
@@ -189,9 +202,9 @@ h2 {
   font-weight: bold;
   padding: 23px 30px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px rgb(227, 219, 219);
   background-color: aquamarine;
 }
 
@@ -203,20 +216,28 @@ h2 {
   font-weight: bold;
   padding: 23px 30px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-shadow: 2px 2px black;
+  background-position-x: center;
 }
+
 
 .textbox {
   /*pargraph div*/
-  font-size: 15px;
-  background-color: rgba(105, 76, 21, 0.719);
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+  background-color: rgba(231, 180, 87, 0.719);
   color: white;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 40px rgba(88, 67, 58, 0.485)
 }
 img {
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 400px;
   margin: 10px;
   margin-right: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -224,9 +245,9 @@ img {
 .formcontainer {
   height: fit-content;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   margin: 10px 40px;
 }
 
@@ -269,27 +290,25 @@ label {
 }
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  height: fit-content;
-
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-left: 70px;
   margin-left: 30px;
-  height: 30px;
+  height: 180px;
+  background-color: antiquewhite;
+  margin-right: 20px;
+  margin-top: 10px;
 }
-#footerLeft {
-  color: white;
-  font-size: 30px;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+footer p {
+  font-size: 16px;
+  font-weight: bold;
 }
-#footerRight {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+footer i {
+  font-size: 40px;
 }
+
 
 .containerMobile {
   background-color: rgba(202, 173, 108, 0.76);
@@ -322,7 +341,12 @@ footer {
   #hamburger {
     display: none;
   }
-
+  .Mobile {
+    display: none;
+  }
+.myLinks a {
+  display: none;
+}
   .Desktop-nav {
     display: contents;
   }
@@ -364,8 +388,23 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px;
+    justify-content: center;
+    margin: 20px;
+  
+    flex-grow: 1;
     padding: 5px;
+   
+  }
+  .Desktop-Aboutme p {
+    font-size: 16px;
+    float: left;
+  
+   
+  }
+  .Desktop-Aboutme img {
+  
+    display: flex;
+    flex-grow: 1;
   }
 
   .hero-image {
@@ -393,35 +432,75 @@ footer {
   .Whole-box {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    
     height: 400px;
-    width: 760px;
+    width: 830px;
   }
   .div1,
   .div2,
   .div3,
   .textbox {
     max-width: 350px;
+    height: 400px;
   }
   img {
-    height: 180px;
+    height: 200px;
     width: 150px;
     float: left;
   }
   form {
-    height: 50px;
-    width: 50px;
+    height: 250px;
+    width: 220px;
+    margin-bottom: 130px;
   }
-  footer {
-    margin-bottom: 200px;
-  }
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+  height: 70px;
+  width: 700px;
+}
+#footerleft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 120px;
+  width: 100px;
+
+}
+#footerright {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+}
 }
 @media screen and (min-width: 900px) {
   .hero-image {
-    height: 60%;
+    height: 100%;
+    width: 100%;
   }
   .Whole-box {
     display: flex;
-    flex-shrink: 1;
+    flex-direction: row;
+    width: 100vw;
+ 
   }
-}
+  .myLinks a {
+    display: none;
+  }
+  .Desktop-Aboutme header {
+    margin: 20px;
+  }
+  .Desktop-Aboutme p{
+    text-align: justify;
+    margin: 0px 30px;
+    padding: 30px;
+  }
+ 
+
+ 
+  }
+
